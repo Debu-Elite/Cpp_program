@@ -1,0 +1,55 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+void reverse(char *str, int start, int end)
+{
+int count;
+end=end-1;
+while(start<end)
+{
+cout<< "before change  start " <<str<<endl;
+count++;
+char temp =str[start];
+str[start]=str[end];
+str[end]=temp;
+cout<<str[start]<<" "<< 
+start++;
+end--;
+}
+cout<<count<<endl;
+cout<<str<<endl;
+}
+
+
+
+void reverse_string(char *str, int n)
+{
+
+reverse(str,0,n);
+int start=0;
+
+
+for(int i=0;i<n;i++)
+{
+	if(str[i]==NULL){
+    		return;}
+       else if(str[i]= ' ') {
+		reverse(str, start,i);
+		start=i+1;}	
+		
+
+
+}
+
+}
+int main()
+{
+char arr[50]= "hello everyone";
+int n=strlen(arr);
+cout<<n<<endl;
+reverse_string(arr,n);
+cout<<"new array : "<<arr<<endl;
+return 0;
+}
+
