@@ -3,15 +3,23 @@ using namespace std;
 
 int main()
 {
+// array of 10 intgers
+int *arr=new int[10];
 
-int *ptr=new int(12);
-cout<<*ptr<<endl;
+for(int i=0;i<10;i++)
+{cout<<"enter the arr["<<i<<"] :";
+  cin>>arr[i];
+   cout<<endl;
+}
 
-float *fptr=new float(2.2);
-cout<<"float value:"<<*fptr<<endl;
 
-char *ctr=new char;
-*ctr='a';
-cout<<"char value:"<<*ctr<<endl;
+for(int i=0;i<10;i++)
+{
+cout<<"i="<<i<<" "<<arr[i]<<endl;
+
+}
+
+
+
 return 0;
 }
