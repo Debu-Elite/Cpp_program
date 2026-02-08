@@ -34,8 +34,9 @@ void insertEnd(int data)
     while(temp->next !=NULL){
     temp=temp->next;
     cout<<"working fine"<<endl;
-    temp->next=newNode;
+    //temp->next=newNode;
     }
+    temp->next=newNode;
 }
 
 
@@ -49,14 +50,34 @@ void printList()
     }
     cout<<"end of the list"<<endl;
 }
+
+void deleteAtIndex(int index)
+{
+if(head==NULL || index <0)
+{
+return;
+}
+
+struct Node *temp =head;
+for(int i=0; temp!=NULL && i<index-1;i++)
+temp=temp->next;
+
+struct Node *nodeToDelete = temp->next;
+temp->next=nodeToDelete->next;
+delete(nodeToDelete);
+
+}
 int main()
 {
-    insertFront(10);
-    insertFront(20);
     insertFront(40);
     insertFront(30);
+    insertFront(20);
+    insertFront(10);
     //printList();
     insertEnd(50);
+
+    printList();
+    deleteAtIndex(2);
     printList();
     return 0;
 }
