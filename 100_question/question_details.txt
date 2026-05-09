@@ -1,0 +1,204 @@
+Tier 1: Basic Logic, Math, and Loops
+Write a program to check if a number is Even or Odd.
+
+Find the largest among three numbers using if-else.
+
+Check if a given year is a Leap Year.
+
+Calculate the factorial of a number using a for loop.
+
+Generate the Fibonacci sequence up to N terms.
+
+Check if a number is a Prime number.
+
+Reverse the digits of an integer (e.g., 123 to 321).
+
+Check if a number is a Palindrome.
+
+Check if a number is an Armstrong number (e.g., 153 = 1³ + 5³ + 3³).
+
+Find the Sum of the digits of an integer.
+
+Calculate the GCD (Greatest Common Divisor) of two numbers.
+
+Calculate the LCM (Least Common Multiple) of two numbers.
+
+Swap two numbers without using a third variable.
+
+Print a right-angled triangle pattern using *.
+
+Print a full pyramid pattern using *.
+
+Build a simple calculator (Add, Subtract, Multiply, Divide) using a switch statement.
+
+Find the ASCII value of a given character.
+
+Check if a character is a Vowel or Consonant.
+
+Count the number of digits in an integer using a while loop.
+
+Print the multiplication table of a given number.
+
+Tier 2: Arrays, Strings, and Pointers
+Find the sum of all elements in an array.
+
+Find the maximum and minimum elements in an array.
+
+Reverse an array in place (without creating a new array).
+
+Implement Linear Search to find an element in an array.
+
+Implement Binary Search on a sorted array.
+
+Count the frequency of each element in an array.
+
+Move all zeros in an array to the end while maintaining the order of other elements.
+
+Check if a given string is a palindrome.
+
+Calculate the length of a string without using the strlen() function.
+
+Count the number of vowels, consonants, digits, and spaces in a string.
+
+Reverse a string in place.
+
+Find the first non-repeating character in a string.
+
+Concatenate two strings without using strcat().
+
+Declare a pointer, assign an integer's address to it, and print the value using the pointer.
+
+Swap two numbers using pointers (Pass by Reference).
+
+Iterate through an array and print its elements using a pointer.
+
+Copy the contents of one array to another using pointers.
+
+Perform Matrix Addition using 2D arrays.
+
+Perform Matrix Multiplication using 2D arrays.
+
+Find the transpose of a 2D matrix.
+
+Tier 3: Functions, Structs, and Basic OOP
+Calculate the factorial of a number using Recursion.
+
+Find the N-th Fibonacci number using Recursion.
+
+Pass an array to a function and modify its elements.
+
+Write a function that returns a dynamically allocated array.
+
+Demonstrate Function Overloading by writing a print() function for int, double, and string.
+
+Write an inline function to calculate the square of a number.
+
+Define a struct for a Point (x, y) and write a function to calculate the distance between two points.
+
+Define a struct for an Employee and sort an array of employees by their salary.
+
+Create a basic Car class with attributes (speed, model) and a drive() method.
+
+Implement a class with private data members and public getter and setter methods.
+
+Create a class demonstrating a Default Constructor and a Parameterized Constructor.
+
+Write a Copy Constructor for a class that contains a pointer to ensure a deep copy.
+
+Implement a Destructor to free dynamically allocated memory within a class.
+
+Use a static class variable to count the number of objects created from that class.
+
+Write a const member function that reads object data but is not allowed to modify it.
+
+Use a friend function to access private members of two completely different classes.
+
+Demonstrate Single Inheritance with a base class Animal and a derived class Dog.
+
+Demonstrate Method Overriding by implementing a speak() function in base and derived classes.
+
+Create an Abstract Class Shape with a pure virtual function calculateArea().
+
+Demonstrate Multiple Inheritance by creating a Printer class, a Scanner class, and an AllInOne class.
+
+Tier 4: Intermediate OOP, Memory, and STL Basics
+Overload the + operator to add two Complex number objects together.
+
+Overload the << operator to print a custom object directly using std::cout.
+
+Use new and delete to dynamically allocate and free an array of integers.
+
+Write code that intentionally causes a Memory Leak, then write the fixed version.
+
+Write a Template Function to swap two variables of any data type.
+
+Write a Template Class for a Box that can store any data type.
+
+Use std::vector to dynamically add elements, remove the last element, and print the size.
+
+Sort a std::vector of integers in descending order using std::sort.
+
+Use a std::map to count the frequency of words in a given sentence.
+
+Use a std::set to remove all duplicate values from an array.
+
+Demonstrate basic Exception Handling using try, catch, and throw for a division by zero error.
+
+Create a Custom Exception class inherited from std::exception.
+
+Write a program to read text from a .txt file and print it to the console.
+
+Write an array of custom objects to a binary file, then read them back into a new array.
+
+Implement a basic Singly Linked List (Insert at head, Print list).
+
+Write a function to delete a node by value in a Singly Linked List.
+
+Implement a Stack data structure using an array (Push, Pop, Peek).
+
+Implement a Queue data structure using an array (Enqueue, Dequeue).
+
+Write a Lambda Expression to filter and print only even numbers from a std::vector.
+
+Use std::find_if with a lambda function to find the first number greater than 100 in an array.
+
+Tier 5: Advanced C++ & Embedded Readiness (C++11/14/17)
+Write a program demonstrating std::unique_ptr and how it automatically frees memory.
+
+Write a program using std::shared_ptr and print the reference count as objects are copied.
+
+Implement a thread-safe Singleton design pattern.
+
+Use std::thread to execute two functions concurrently.
+
+Use std::mutex and std::lock_guard to prevent a race condition when two threads modify a shared counter.
+
+Demonstrate Move Semantics by writing a Move Constructor and Move Assignment Operator for a class managing a dynamic buffer.
+
+Implement a basic Circular Buffer (Ring Buffer) class—a highly common structure in UART/Interrupt handling.
+
+Bit Manipulation: Write a function or macro to SET the n-th bit of a 32-bit integer.
+
+Bit Manipulation: Write a function or macro to CLEAR the n-th bit of a 32-bit integer.
+
+Bit Manipulation: Write a function or macro to TOGGLE the n-th bit of a 32-bit integer.
+
+Bit Manipulation: Write a function to count the number of set bits (1s) in an integer (Popcount).
+
+Write a simple Finite State Machine (FSM) using an enum class and a switch statement.
+
+Use std::atomic<int> to create a lock-free thread-safe counter.
+
+Implement a callback mechanism using std::function and register it to a simulated "Interrupt".
+
+Use constexpr to calculate the factorial of a number entirely at compile-time.
+
+Memory-Mapped I/O: Create a pointer cast to a specific volatile memory address (e.g., 0x40021000) and write a value to it.
+
+Implement a simple Object Pool pattern to pre-allocate memory and avoid using new/delete in a fast real-time loop.
+
+Write a function that safely converts Endianness (Little-Endian to Big-Endian).
+
+Implement the Observer Pattern (Publish/Subscribe) using standard C++ vectors and virtual update methods.
+
+Build a custom String or Buffer class that strictly uses a fixed-size internal array, completely avoiding the heap (std::malloc or new), guaranteeing deterministic timing for an RTOS environment.
